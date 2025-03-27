@@ -1,118 +1,92 @@
-<h1 align="center">Wix Headless Templates</h1>
+# 🚀 Wix Astro Blog Template
 
-> Join the Wix Headless community on [Discord](https://discord.gg/n6TBrSnYTp)! 🚀
+This project combines the official [Astro Blog template](https://github.com/withastro/astro/tree/main/examples/blog) with **[Wix Headless](https://dev.wix.com/docs/go-headless)**, enabling seamless content management with Wix while delivering a high-performance static site using Astro.
 
-Welcome to the Wix Headless Templates repository! This repository contains various templates for building headless websites using Wix and different front-end frameworks.
+## 📖 Table of Contents
 
-Wix Headless allows you to leverage Wix's powerful business solutions and APIs to manage content, Wix Bookings, Wix Stores, and more, while using your preferred front-end technology. By decoupling the backend from the frontend, you can create highly customizable and performant websites.
+- [Features](#-features)
+- [Demo](#-demo)
+- [Installation](#-installation)
+- [How It Works](#-how-it-works)
+- [Deployment](#-deployment)
 
-Wix offers a variety of business solutions, including:
-- **Content Management System (CMS)**: Manage and organize your website content through an intuitive interface.
-- **Wix Bookings**: Handle appointments, classes, and subscriptions with ease.
-- **Wix Stores**: Manage products, orders, and inventory for your online store.
-- **Wix Events**: Organize and manage events, ticketing, and attendee registration.
-- **Wix Members**: Integrate user authentication and management into your website.
+## ✨ Features
 
-The templates in this repository showcase the usage of these business solutions APIs, providing you with ready-to-use examples. They can be used as starting points for new projects or as reference implementations when integrating these features into your own projects.
+- **🚀 Astro-powered blog** – A minimal, performant, and SEO-friendly blog template built with **Astro**.
+- **📝 Wix Blog as a Headless CMS** – Manage blog content directly in the **Wix Dashboard**, including posts, categories, and tags.
+- **🔗 Seamless Data Fetching** – Uses [`@wix/astro`](https://www.npmjs.com/package/@wix/astro) to fetch and display blog content dynamically.
 
-## Resources
+## 🌍 Live Demo
 
-Here are some useful links for getting started with Wix Headless and the available templates:
+Check out the **Wix Astro Blog Demo** here:
 
-- [Wix Headless Documentation](https://dev.wix.com/docs/go-headless)
-- [Wix SDK Documentation](https://dev.wix.com/docs/sdk)
-- [Wix Headless Templates Page](https://www.wix.com/studio/developers/headless/templates)
-- [Community on Discord](https://discord.gg/n6TBrSnYTp)
+👉 **[Live Demo](https://netlify.blog-demo.wix.dev/)**
 
-## Templates
+## ⚡ Installation
 
-<table>
-  <thead>
-    <tr>
-      <th>Template</th>
-      <th>Description</th>
-      <th>Live Demo</th>
-      <th>Wix Apps Used</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td colspan="4" align="center"><strong>Astro</strong></td>
-    </tr>
-    <tr>
-      <td colspan="4" align="center"><a href="./astro/">Getting Started with Wix Astro templates</a></td>
-      </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/astro/astrowind">AstroWind</a></td>
-      <td>Integrates Astro with Tailwind CSS, providing advanced slot usage and dark mode configuration.</td>
-      <td></td>
-      <td>CMS, Wix Blog, Wix Pricing Plans</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/astro/blog">Blog</a></td>
-      <td>Combines the official Astro Blog template with Wix Headless for seamless content management and high-performance static site using Astro.</td>
-      <td></td>
-      <td>Wix Blog</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/astro/commerce">Commerce</a></td>
-      <td>A template for creating e-commerce sites using Astro and Wix Headless.</td>
-      <td></td>
-      <td>Wix Stores</td>
-    </tr>
-    <tr>
-      <td colspan="4" align="center"><strong>Next.js</strong></td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/nextjs/minimal-examples">Minimal Examples</a></td>
-      <td>Concise examples for Next.js projects integrated with Wix Headless.</td>
-      <td><a href="https://minimal-examples-demo.wix.dev">Minimal Examples Demo</a></td>
-      <td>Wix Stores, Wix Bookings, Wix Events</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/nextjs/appointments-subscriptions">Appointments Subscriptions</a></td>
-      <td>A template for managing appointments and subscriptions using Next.js and Wix Headless.</td>
-      <td><a href="https://appointments-subscriptions-demo.wix.dev">Appointments Subscriptions Demo</a></td>
-      <td>Wix Bookings, Wix Members</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/nextjs/classes-subscriptions">Classes Subscriptions</a></td>
-      <td>A template for managing class subscriptions using Next.js and Wix Headless.</td>
-      <td><a href="https://classes-subscriptions-demo.wix.dev">Classes Subscriptions Demo</a></td>
-      <td>Wix Bookings, Wix Members</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/nextjs/cms-education">CMS Education</a></td>
-      <td>Uses Wix Headless to leverage the Wix CMS for managing content on an education site.</td>
-      <td><a href="https://cms-education-demo.wix.dev">CMS Education Demo</a></td>
-      <td>CMS</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/nextjs/commerce-ticketing">Commerce Ticketing</a></td>
-      <td>A template for an online store and event ticketing using Next.js and Wix Headless.</td>
-      <td><a href="https://commerce-ticketing-demo.wix.dev">Commerce Ticketing Demo</a></td>
-      <td>Wix Events, Wix Members</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/nextjs/commerce">Next.js Commerce</a></td>
-      <td>The <a href="https://github.com/vercel/commerce">Next.js Commerce</a> template with headless integration using Wix.</td>
-      <td><a href="https://commerce-demo.wix.dev">Commerce Demo</a></td>
-      <td>Wix Stores</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/nextjs/external-identity-provider">External Identity Provider</a></td>
-      <td>A template for integrating external identity providers (e.g Github) using Next.js and Wix Headless.</td>
-      <td><a href="https://external-identity-provider-demo.wix.dev">External Identity Provider Demo</a></td>
-      <td>Wix Members</td>
-    </tr>
-    <tr>
-      <td colspan="4" align="center"><strong>React Native (Expo)</strong></td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/wix/headless-templates/tree/main/react-native/mobile-ecommerce">Mobile E-commerce</a></td>
-      <td>A template for creating mobile e-commerce applications using React Native and Wix Headless.</td>
-      <td></td>
-      <td>Wix Stores, Wix Members</td>
-    </tr>
-  </tbody>
-</table>
+### 1️⃣ Create the project
+
+Scaffold a new Wix Astro Blog project using the official template:
+
+```sh
+npm create astro@latest -- --template wix/headless-templates/astro/blog
+```
+
+### 2️⃣ Pull environment variables
+
+Sync required API keys and settings with Wix:
+
+```sh
+npx wix edge pull-env
+```
+
+This generates a `.env.local` file with your environment variables.
+
+### 3️⃣ Start the development server
+
+Run the local development server:
+
+```sh
+npm run dev
+```
+
+Visit **[http://localhost:4321/](http://localhost:4321/)** to view your blog. 🎉
+
+### 4️⃣ Manage content
+
+The blog includes **sample posts** to start. Edit or add new posts via the **Wix Blog Dashboard**:
+
+1. Open the **Wix Dashboard** → **Blog**.
+2. Update or create new posts.
+3. Modify **titles, content, images, and tags**.
+4. Publish or save as a draft.
+
+More details:
+
+- [Wix Blog Docs](https://support.wix.com/en/wix-blog-1401920)
+
+## 🛠 How It Works
+
+- **📝 Content Management** – Create and manage blog posts, categories, and tags directly in the **Wix Blog Dashboard**.
+
+- **📡 Data Fetching** – The `@wix/astro` adapter enables seamless data retrieval using the **Wix SDK**:
+
+  - **Blog Posts** – Uses `wixBlogLoader` to dynamically fetch and format blog posts, creating the blog content collection.
+
+  Thanks to the `wix()` Astro adapter from `@wix/astro`, all content is efficiently retrieved and integrated into the Astro Blog template.
+
+- **⚡ Fast & Optimized** – Blog posts are statically generated for speed while still allowing dynamic updates via Wix.
+
+## 🚀 Deployment
+
+To deploy your site, run the following command:
+
+```sh
+npm run deploy:prod
+```
+
+This will build and deploy your site to the configured hosting platform. Ensure that all necessary environment variables are set before running this command.
+
+### Alternative Deployment Options
+
+If you prefer to deploy manually, you can use **Vercel, Netlify, GitHub Pages**, or any other hosting service while still maintaining dynamic content capabilities from Wix.
